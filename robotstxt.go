@@ -56,8 +56,8 @@ func (e ParseError) Error() string {
 	return b.String()
 }
 
-var allowAll = &RobotsData{allowAll: true}
-var disallowAll = &RobotsData{disallowAll: true}
+var AllowAll = &RobotsData{allowAll: true}
+var DisallowAll = &RobotsData{disallowAll: true}
 var emptyGroup = &Group{}
 
 func FromStatusAndBytes(statusCode int, body []byte) (*RobotsData, error) {
